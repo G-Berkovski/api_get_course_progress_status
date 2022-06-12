@@ -1,0 +1,11 @@
+# Turn rewrite engine on
+RewriteEngine On
+
+Options -MultiViews
+
+<IfModule mod_rewrite.c>
+	RewriteCond %{REQUEST_FILENAME} -d [OR]
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteCond %{REQUEST_URI} ^api/ [NC]
+	RewriteRule ^(.+)$ /api/index.php?url=$1 [NC,QSA,L]
+</IfModule>
