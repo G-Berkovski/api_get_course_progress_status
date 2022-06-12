@@ -47,7 +47,7 @@ class Status
 
         $courseTimeframe = $dateStart->diffInSeconds($dateFinish); // in seconds
 
-        // how many seconds should the student study each day to complete the course.
+        // how man seconds should the student study each day to complete the course.
         $courseStudentPase = $this->getNeededDailyTime($courseTimeframe, $courseDuration);
 
         $idealProgress = $this->getProgressExpectation($dateStart, $courseTimeframe, $courseStudentPase);
