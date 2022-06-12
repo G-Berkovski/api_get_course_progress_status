@@ -4,7 +4,8 @@
 
 [Sample data]
 
-Endpoint: http://localhost/api/v1/progress/status
+Endpoint: GET http://localhost/api/v1/progress/status
+
 
 request body:
 
