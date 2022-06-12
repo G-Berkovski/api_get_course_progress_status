@@ -1,0 +1,7 @@
+RewriteEngine On
+Options -MultiViews
+
+<IfModule mod_rewrite.c>
+	RewriteCond %{REQUEST_URI} ^ [NC]
+	RewriteRule ^(.+)$ index.php?url=$1 [NC,QSA,L]
+</IfModule>
