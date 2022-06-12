@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "69711ad0-7771-4c4f-a55c-4c26f28b8c52",
+		"name": "Localhost_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11007833"
+	},
+	"item": [
+		{
+			"name": "http://localhost/job/crud_api/api/v1/progress/status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"course_duration\":\"864000\",\r\n    \"course_progress\":\"86\",\r\n    \"date_start\":\"2022-06-05T00:00:00Z\",\r\n    \"date_finish\":\"2022-06-14T00:00:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/job/crud_api/api/v1/progress/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"job",
+						"crud_api",
+						"api",
+						"v1",
+						"progress",
+						"status"
+					],
+					"query": [
+						{
+							"key": "course_duration",
+							"value": "750",
+							"disabled": true
+						},
+						{
+							"key": "course_progress",
+							"value": "10",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
